@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Horizontal Scrolling Gallery</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    
+        }
+
+        /* Container for the gallery */
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Scrolling gallery */
+        .scrolling-gallery {
+            display: flex;
+            overflow-x: auto;
+            gap: 10px; /* Space between images */
+            padding: 10px;
+            scroll-behavior: smooth;
+            max-width: 80%; /* Constrain gallery width */
+        }
+
+        /* Hide scrollbar for all browsers */
+        .scrolling-gallery::-webkit-scrollbar {
+            display: none; /* Chrome, Safari, and Opera */
+        }
+        .scrolling-gallery {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        /* Image styling */
+        .scrolling-gallery img {
+            height: 150px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        /* Hover effect for images */
+        .scrolling-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Centered Horizontal Scrolling Gallery -->
+    <div class="gallery-container">
+        <div class="scrolling-gallery">
+            <img src="Images/Image%201.JPG">
+            <img src="Images/Image2.jpeg">
+            <img src="Images/Image3.jpeg">
+            <img src="Images/Image4.JPG">
+            <img src="Images/Image5.JPG">
+            <img src="Images/Image6JPG.JPG">
+        </div>
+    </div>
+    <!-- Home Section -->
+    <section class="section">
+        <h1>Welcome to My Website!</h1>
+        <p>My name is Abby Marazita, and I'm a senior Psychology and Media & Professional 
+        Communications Major with a specialized track in corporate/community relations. I 
+        have just recently been accepted to Ohio State University's Masters of Human Resources
+        Management program. This semester I am taking a Composing Digital Media course to strengthen
+        my media skills. These are some of the projects I've worked on thus far:
+    </p>
+        <figure>
+    <img src="Images/Visual-Argument.jpeg" style="width:300px;">
+    <figcaption>Visual Argument: Food Desert</figcaption>
+</figure>
+
+	<h2>Soundscape Narrative: Airplane</h2>
+	<audio controls>
+	<source src="Audio/Soundscape%20narrative%20Final%20Draft.mp3" />
+</audio>
+        
+    </section>
+
+</body>
+</html>
+
+
